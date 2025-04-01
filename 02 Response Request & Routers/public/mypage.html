@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Post Request</title>
+</head>
+<body>
+    <!-- To check the post request this way it is not a good way -->
+    <!-- we made a html page because we want to check the POST Request at the / endpoint -->
+    <script>
+        /* async function testpost(){
+            let a = await fetch("/",{method:"POST"})
+            let b = await a.text()
+            console.log(b);
+        }
+        testpost() */
+
+        async function testpost(){
+            let a = await fetch("/",{method:"PUT"})
+            let b = await a.text()
+            console.log(b);
+        }
+        testpost()
+    </script>
+</body>
+</html>

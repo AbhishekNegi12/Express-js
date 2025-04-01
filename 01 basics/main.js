@@ -28,12 +28,16 @@ app.get("/blog", (req, res) => {
 
 app.get("/blog/:slug", (req, res) => {
     //logic to fetch {slug} from the db
+
+    // params comes in url as an object
     console.log(req.params)
     console.log(req.query)
+    //query is an object
     res.send(`hello ${req.params.slug}`);
 });
 // app.get("/blog/:slug/:second", (req, res) => {
 //     //logic to fetch {slug} from the db
+//      //req.params is an object
 //     res.send(`hello ${req.params.slug} and ${req.params.second}`);
 // });
 // app.get("/blog/intro-to-js", (req, res) => {
