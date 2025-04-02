@@ -2,6 +2,7 @@
 //if it matches the request end point i.e the routing it will execute
 
 //MIDDLEWARE IS BASICALLY A FUNCTION THAT WILL RUN BEFORE EVERY REQUEST AND IT HAS BOTH REQ AND RES OBJECT AND IT CAN MODIFY REQUEST 
+// WITH THE HELP OF MIDDLEWARE YOU CAN VALIDATE COOKIE, LOGGING n 
 const express = require('express')
 const app = express()
 const port = 3000
